@@ -20,7 +20,7 @@ function getEventBody ({
   body = event.body,
   isBase64Encoded = event.isBase64Encoded
 }) {
-  return Buffer.from(body, isBase64Encoded ? 'base64' : 'utf8')
+  return body;
 }
 
 function getRequestValuesFromEvent ({
